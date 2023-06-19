@@ -17,7 +17,7 @@ To include this library in your project, add the following to your `build.gradle
 
 ```gradle
 dependencies {
-    implementation 'org.bityagi.blockchain.utils:0.0.1'
+    implementation 'io.bityagi.blockchain.utils:0.0.1-SNAPSHOT'
 }
 ```
 
@@ -50,10 +50,10 @@ Tests are written using JUnit. You can run them via the command line with Gradle
 ```
 
 ## Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+We use [SemVer](https://semver.org/) for versioning. For the versions available, see the tags on this repository.
 
 ## License
-This project is licensed under the MIT License
+This project is licensed under the MIT License, reference the [LICENSE.md](LICENSE.md) file for details.

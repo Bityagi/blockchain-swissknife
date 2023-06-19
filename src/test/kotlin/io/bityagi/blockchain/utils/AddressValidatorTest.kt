@@ -1,4 +1,4 @@
-package io.digitalasset.utils.address
+package io.bityagi.blockchain.utils
 
 import org.junit.jupiter.api.Test
 

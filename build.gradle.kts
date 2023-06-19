@@ -9,7 +9,7 @@ plugins {
 	signing
 }
 
-group = "io.digitalasset.utils"
+group = "io.bityagi.blockchain.utils"
 version = "0.0.1-SNAPSHOT"
 
 java {
