@@ -9,7 +9,7 @@ plugins {
 	signing
 }
 
-group = "io.bityagi.blockchain.utils"
+group = "io.github.bityagi.blockchain.utils"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -52,12 +52,14 @@ publishing {
 				name.set("Blockchain Swissknife")
 				description.set("A blockchain library")
 				url.set("https://github.com/username/blockchain-swissknife") // replace with your project's URL
+
 				licenses {
 					license {
 						name.set("The Apache License, Version 2.0")
 						url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
 					}
 				}
+
 				developers {
 					developer {
 						id.set("maintainer")
@@ -86,6 +88,11 @@ publishing {
 	}
 }
 
+
 signing {
-	sign(publishing.publications)
+	val key = findProperty("pgpKey") as String? ?: System.getenv("PGP_KEY")
+	val pwd = findProperty("pgpPwd") as String? ?: System.getenv("PGP_PWD")
+
+	useInMemoryPgpKeys(key, pwd)
+	sign(publishing.publications["mavenJava"])
 }

@@ -1,4 +1,4 @@
-package io.bityagi.blockchain.utils
+package io.github.bityagi.blockchain.utils
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

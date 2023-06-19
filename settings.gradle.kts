@@ -1,1 +1,1 @@
-rootProject.name = "address"
+rootProject.name = "blockchain-swissknife"
